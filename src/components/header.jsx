@@ -18,14 +18,23 @@ const Header = () => {
 
   const navigate = useNavigate();
 //   const user = false;
-const user = true;
+const user = false;
 
 
   return (
     <nav className="flex justify-between items-center p-4">
 
       <Link to="/">
-        <img src="/logo.png" className="h-16" alt="Linkora logo"/>
+        
+
+        {/* <img src="/logo.png" className="h-24 w-auto" alt="Linkora logo" /> */}
+        <img
+  src="/logo.png"
+  className="h-24 w-auto object-contain hover:scale-105 transition-transform duration-200"
+  alt="Linkora logo"
+/>
+
+
       </Link>
 
       <div>
